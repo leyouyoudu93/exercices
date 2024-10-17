@@ -53,3 +53,15 @@ liste_3=[2**x for x in range(11)]
 print(liste_3)    
 liste_4=[x for x in range(3,52) if x%3==0] 
 print(liste_4)
+
+
+
+exo 22
+
+def positif(L):
+    count=0
+    for k in L:
+        if k >=0:
+            count+=1
+    return count
+print(positif([2,-1,3,4,-6,0,6]))
