@@ -1,0 +1,18 @@
+# Dans l'éditeur PYTHON
+class Carte: # Définition de la classe
+"Une carte d'un jeu de 32 ou 52 cartes"
+ def __init__(self,valeur,couleur): # constructeur
+ self.valeur=valeur # 1er attribut {de 2 à 14}
+ self.couleur=couleur # {'pique', 'carreau', 'coeur', 'trefle'}
+ def getAttributs(self): # méthode 2 : accesseur
+ return (self.valeur,self.couleur)
+ def getValeur(self): # méthode 3 : accesseur
+ return self.valeur
+ def getCouleur(self): # méthode 4 : accesseur
+ return self.couleur
+ def setValeur(self,v): # mutateur avec contrôle
+ if 2<=v<=14:
+ self.valeur=v
+ return True
+ else:
+ return False
